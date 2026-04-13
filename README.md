@@ -11,7 +11,7 @@
 
 Cardápio digital interativo para restaurante gourmet, com carrinho de compras, cálculo de total e design elegante. Desenvolvido como projeto de portfólio para demonstrar habilidades em **Front-end**.
 
-🔗 **Demo:** [https://cardapiores.netlify.app](https://cardapiores.netlify.app)
+🔗 **Demo:**(https://cardapiores.netlify.app/))
 
 ---
 

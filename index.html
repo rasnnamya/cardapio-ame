@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Âme | Cozinha de Alma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="cardapio.css">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="restaurant-badge">COZINHA DE ALMA</div>
+      <h1>Â<span>me</span></h1>
+      <div class="hero-divider">
+        <span></span>
+        <i class="fas fa-utensils"></i>
+        <span></span>
+      </div>
+      <p class="hero-subtitle">Culinária que inspira, sabores que encantam</p>
+      <div class="hero-info">
+        <span><i class="far fa-clock"></i> Terça a Domingo | 19h-00h</span>
+        <span><i class="fas fa-map-marker-alt"></i> Rua dos Sabores, 123</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menu Navigation -->
+  <nav class="menu-nav">
+    <div class="nav-container">
+      <button class="nav-item active" data-category="entradas">
+        <i class="fas fa-seedling"></i>
+        <span>Entradas</span>
+      </button>
+      <button class="nav-item" data-category="principais">
+        <i class="fas fa-utensil-spoon"></i>
+        <span>Principais</span>
+      </button>
+      <button class="nav-item" data-category="sobremesas">
+        <i class="fas fa-cake-candles"></i>
+        <span>Sobremesas</span>
+      </button>
+      <button class="nav-item" data-category="bebidas">
+        <i class="fas fa-wine-glass-alt"></i>
+        <span>Bebidas</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Menu Section -->
+  <main class="menu-main">
+    <div class="container">
+      <div class="menu-header">
+        <h2 id="category-title">Entradas</h2>
+        <p class="menu-description">Pequenas criações para começar sua experiência</p>
+      </div>
+      <div id="menu-grid" class="menu-grid"></div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>Âme</h3>
+        <p>Cozinha de Alma</p>
+      </div>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+      <p class="footer-copy">© 2025 Âme • Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <!-- Carrinho flutuante -->
+  <div class="cart-floating" onclick="toggleCart()">
+    <i class="fas fa-shopping-bag"></i>
+    <span class="cart-count" id="cart-count">0</span>
+  </div>
+
+  <!-- Modal do Carrinho -->
+  <div id="cart-modal" class="cart-modal">
+    <div class="cart-header">
+      <span><i class="fas fa-shopping-bag"></i> Seu pedido</span>
+      <span class="cart-close" onclick="toggleCart()">✕</span>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-total">
+      <span>Total</span>
+      <span id="cart-total">R$ 0,00</span>
+    </div>
+    <button class="cart-checkout" onclick="alert('Em breve! Finalização do pedido via WhatsApp')">
+      <i class="fab fa-whatsapp"></i> Finalizar pedido
+    </button>
+  </div>
+
+  <script src="cardapio.js"></script>
+</body>
+</html>

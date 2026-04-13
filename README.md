@@ -33,6 +33,4 @@ Cardápio digital interativo para restaurante gourmet, com carrinho de compras, 
 | JavaScript ES6+ | Lógica do carrinho e interatividade |
 | Font Awesome | Ícones profissionais |
 
----
 
-## 📁 Estrutura do Projeto
